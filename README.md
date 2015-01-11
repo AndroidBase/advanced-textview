@@ -18,3 +18,4 @@ Companion app for my [Advanced Android TextView talk][1], demostrating:
  * Emoji
 
   [1]: http://chiuki.github.io/advanced-android-textview
+  ![image](https://github.com/AndroidBase/advanced-textview/blob/master/dome.png)
