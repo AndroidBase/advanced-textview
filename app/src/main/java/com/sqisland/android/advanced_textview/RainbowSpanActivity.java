@@ -20,6 +20,9 @@ import android.widget.TextView;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * 高亮匹配选中的字符
+ */
 public class RainbowSpanActivity extends Activity {
   private TextView textView;
 
@@ -63,7 +66,10 @@ public class RainbowSpanActivity extends Activity {
     textView.setText(spannableString);
   }
 
-  private static class RainbowSpan extends CharacterStyle implements UpdateAppearance {
+    /**
+     *自定义字体风格
+     */
+  private static class RainbowSpan extends CharacterStyle implements UpdateAppearance{
     private final int[] colors;
 
     public RainbowSpan(Context context) {

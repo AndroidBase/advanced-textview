@@ -5,13 +5,17 @@ import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.widget.TextView;
-
+/**
+ * 通过Texview 的图标功能添加动画图标 原理是
+ *
+ *
+ */
 public class AnimatedCompoundDrawableActivity extends Activity {
-  private TextView textView;
-
-  private enum Operation {
+    private TextView textView;
+    private enum Operation {
     START, STOP
   }
+
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -20,12 +24,16 @@ public class AnimatedCompoundDrawableActivity extends Activity {
     textView = (TextView) findViewById(R.id.text);
   }
 
+
   @Override
   protected void onStart() {
     super.onStart();
     changeAnimation(Operation.START);
   }
 
+    /**
+     *
+     */
   @Override
   protected void onStop() {
     super.onStop();

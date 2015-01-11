@@ -7,6 +7,9 @@ import android.graphics.Shader;
 import android.os.Bundle;
 import android.widget.TextView;
 
+/**
+ * 为TextView 添加渐变
+ */
 public class GradientTextActivity extends Activity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {

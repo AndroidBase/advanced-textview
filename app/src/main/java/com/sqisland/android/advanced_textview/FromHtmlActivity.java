@@ -8,6 +8,9 @@ import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
 
+/**
+ * 渲染 html 文本格式
+ */
 public class FromHtmlActivity extends Activity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {

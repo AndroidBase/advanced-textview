@@ -38,6 +38,10 @@ public class EmojiActivity extends Activity {
     });
   }
 
+    /**
+     * 自定义的 Emoji
+     * @param textView
+     */
   private void renderEmoji(TextView textView) {
     String text = textView.getText().toString();
     SpannableString spannableString = new SpannableString(text);
@@ -46,9 +50,11 @@ public class EmojiActivity extends Activity {
     Pattern pattern = Pattern.compile("\u26F7");    // skier
     Matcher matcher = pattern.matcher(text);
     while (matcher.find()) {
+        //字体颜色设为蓝色
       ForegroundColorSpan foregroundColorSpan = new ForegroundColorSpan(
           getResources().getColor(R.color.blue));
-      IconFontSpan iconFontSpan = new IconFontSpan(textView.getContext());
+        IconFontSpan iconFontSpan = new IconFontSpan(textView.getContext());
+
       spannableString.setSpan(iconFontSpan, matcher.start(), matcher.end(), 0);
       spannableString.setSpan(foregroundColorSpan, matcher.start(), matcher.end(), 0);
     }

@@ -8,6 +8,9 @@ import android.graphics.Shader;
 import android.os.Bundle;
 import android.widget.TextView;
 
+/**
+ * 为TextView 渲染 图案
+ */
 public class PatternedTextActivity extends Activity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {

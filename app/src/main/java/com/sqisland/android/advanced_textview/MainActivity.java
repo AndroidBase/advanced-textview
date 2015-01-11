@@ -25,17 +25,22 @@ public class MainActivity extends ListActivity {
     getListView().addFooterView(footer);
 
     final ArrayList<Demo> demos = new ArrayList<Demo>();
-
+    //添加图标
     demos.add(new Demo(this, AnimatedCompoundDrawableActivity.class,
         R.string.animated_compound_drawable, R.string.animated_compound_drawable_desc));
+      //阴影
     demos.add(new Demo(this, ShadowTextActivity.class,
         R.string.shadow_text, R.string.shadow_text_desc));
+      //自定义字体
     demos.add(new Demo(this, CustomFontActivity.class,
         R.string.custom_font, R.string.custom_font_desc));
+        //渐变
     demos.add(new Demo(this, GradientTextActivity.class,
         R.string.gradient_text, R.string.gradient_text_desc));
+    // 渲染图案颜色
     demos.add(new Demo(this, PatternedTextActivity.class,
         R.string.patterned_text, R.string.patterned_text_desc));
+        //HTML 格式
     demos.add(new Demo(this, FromHtmlActivity.class,
         R.string.from_html, R.string.from_html_desc));
 
@@ -43,23 +48,34 @@ public class MainActivity extends ListActivity {
       demos.add(new Demo(this, FractionActivity.class,
           R.string.fraction, R.string.fraction_desc));
     }
-
+    //自定义TextView 风格
     demos.add(new Demo(this, StyledStringActivity.class,
         R.string.styled_string, R.string.styled_string_desc));
+      //文本对齐方式
     demos.add(new Demo(this, AlignmentSpanActivity.class,
         R.string.alignment_span, R.string.alignment_span_desc));
+      //高亮匹配选中的字符
     demos.add(new Demo(this, RainbowSpanActivity.class,
         R.string.rainbow_span, R.string.rainbow_span_desc));
+      //Android 启动的 闪光效果
     demos.add(new Demo(this, AnimatedRainbowSpanActivity.class,
         R.string.animated_rainbow_span, R.string.animated_rainbow_span_desc));
+
+
     demos.add(new Demo(this, ClickableSpanActivity.class,
         R.string.clickable_span, R.string.clickable_span_desc));
+      // 底格
     demos.add(new Demo(this, LinedPaperActivity.class,
         R.string.lined_paper, R.string.lined_paper_desc));
     demos.add(new Demo(this, EmojiActivity.class,
         R.string.emoji, R.string.emoji_desc));
 
-    SimpleAdapter adapter = new SimpleAdapter(
+
+      demos.add(new Demo(this, MyCustomFontActivity.class,
+             R.string.myfont, R.string.myfontdes));
+
+
+      SimpleAdapter adapter = new SimpleAdapter(
         this,
         demos,
         android.R.layout.simple_list_item_2,

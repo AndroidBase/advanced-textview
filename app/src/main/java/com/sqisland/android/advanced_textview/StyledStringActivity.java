@@ -8,6 +8,9 @@ import android.text.SpannableStringBuilder;
 import android.text.style.TextAppearanceSpan;
 import android.widget.TextView;
 
+/**
+ * 自定义TextView风格
+ */
 public class StyledStringActivity extends Activity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {

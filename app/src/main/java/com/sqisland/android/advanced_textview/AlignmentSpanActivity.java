@@ -11,6 +11,9 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+/**
+ * 文本对齐方式
+ */
 public class AlignmentSpanActivity extends Activity {
   private ScrollView scroll;
   private TextView textView;

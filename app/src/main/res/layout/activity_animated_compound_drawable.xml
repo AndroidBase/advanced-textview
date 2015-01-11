@@ -11,3 +11,4 @@
     android:drawableRight="@drawable/animated_wifi"
     android:drawablePadding="8dp"
     tools:context=".AnimatedCompoundDrawableActivity"/>
+    <!--  资源文件为动画-->

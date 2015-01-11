@@ -13,8 +13,10 @@ public class AboutActivity extends Activity {
     setContentView(R.layout.activity_about);
 
     TextView textView = (TextView) findViewById(R.id.text);
+      textView.setMovementMethod(LinkMovementMethod.getInstance());
     String html = getString(R.string.about_text);
     textView.setText(Html.fromHtml(html));
-    textView.setMovementMethod(LinkMovementMethod.getInstance());
+
+
   }
 }

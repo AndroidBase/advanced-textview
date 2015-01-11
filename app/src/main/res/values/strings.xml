@@ -70,10 +70,10 @@
     highlighted term is also given a bold style.
   </string>
 
-  <string name="animated_rainbow_span">Animated rainbow span</string>
+  <string name="animated_rainbow_span">Animated rainbow span 闪光效果</string>
   <string name="animated_rainbow_span_desc">With ObjectAnimator</string>
   <string name="animated_rainbow_span_text">
-    To make an animated rainbow span, translate the Shader with a Matrix, and change the translation
+    To make an animated rainbow span 闪光效果, translate the Shader with a Matrix, and change the translation
     value with an ObjectAnimator.
   </string>
 
@@ -100,7 +100,8 @@
     draw :speed_50::speed_110: dynamically:speed_42:.</string>
   <string name="emoji_octopus">:octopus:</string>
   <string name="render_emoji">Render emoji</string>
-
+    <string name="myfont">自定义字体</string>
+    <string name="myfontdes">ruachlet</string>
   <string name="about">About</string>
   <string name="about_text">
     <![CDATA[

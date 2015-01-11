@@ -6,8 +6,8 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:gravity="center"
-    android:text="@string/gradient"
-
+    android:text="@string/custom_font"
+    android:textColor="@color/green"
     android:textSize="@dimen/text_size_huge"
     android:textStyle="bold"
-    tools:context=".GradientTextActivity"/>
+   />

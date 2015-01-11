@@ -64,6 +64,9 @@ public class AnimatedRainbowSpanActivity extends Activity {
     }
   };
 
+    /**
+     * 带闪光动画效果的字体
+     */
   private static class AnimatedColorSpan extends CharacterStyle implements UpdateAppearance {
     private final int[] colors;
     private Shader shader = null;
